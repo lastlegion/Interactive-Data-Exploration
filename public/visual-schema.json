@@ -1,103 +1,35 @@
 [
     {
-        "name": "id",
-        "datatype": "integer",
-        "visual-attribute": true
-    },
-    {
-        "name": "guid",
+        "name": "profitOrLoss",
         "datatype": "string",
-        "visual-attribute": true
-    },
-    {
-        "name": "name",
-        "datatype": "string",
-        "visual-attribute": true
-    },
-    {
-        "name": "registered",
-        "datatype": "string",
-        "visual-attribute": true
-    },
-    {
-        "name": "gender",
-        "datatype": "string",
+        "visual-attribute": true,
         "filtering-attribute": true,
-        "filtering-attribute-order": 4,
-        "filtering-attribute-filter": "",
         "visualization-type": "pieChart",
-        "filter": "male"
+        "filtering-attribute-order": 1
     },
     {
-        "name": "age",
-        "datatype": "integer",
+        "name": "quarter",
+        "datatype": "string",
         "filtering-attribute": true,
         "visual-attribute": true,
-        "filtering-attribute-order": 1,
-        "filtering-attribute-filter": "",
-        "visualization-type": "barChart",
-        "domain": [20,40],
-        "filter": [23,30]
-
-    },
-    {
-        "name": "isActive",
-        "datatype": "boolean",
-        "filtering-attribute": true,
-        "visual-attribute": true,
-        "filtering-attribute-order": 3,
-        "filtering-attribute-filter": "",
-        "visualization-type": "pieChart"
-    },
-    {
-        "name": "Ai",
-        "datatype": "integer",
-        "data-provider": "small-data.json",
-        "filtering-attribute": true,
-        "filtering-attribute-order": 2,
-        "filtering-attribute-filter": "",
-        "visualization-type": "barChart",
-        "domain": [0,11]
-    },
-    {
-        "name": "Bi",
-        "datatype": "integer",
-        "data-provider": "small-data.json",
-        "filtering-attribute": true,
-        "filtering-attribute-order": 5,
-        "filtering-attribute-filter": "",
         "visualization-type": "pieChart",
-        "domain": [0,8],
-        "visual-attribute": true
+        "filtering-attribute-order":2
     },
     {
-        "name": "Ci",
+        "name": "dayOfWeek",
+        "datatype": "string",
+        "visual-attribute": true,
+        "filtering-attribute": true,
+        "visualization-type": "rowChart",
+        "filtering-attribute-order":3
+    },    
+    {
+        "name": "fluctuation",
         "datatype": "integer",
-        "data-provider": "small-data.json",
+        "visual-attribute": true,
         "filtering-attribute": true,
-        "filtering-attribute-order": 6,
-        "filtering-attribute-filter": "",
         "visualization-type": "barChart",
-        "domain": [0,12]
-    },
-    {
-        "name": "Di",
-        "datatype": "integer",
-        "data-provider": "small-data.json",
-        "filtering-attribute": true,
-        "filtering-attribute-order": 7,
-        "filtering-attribute-filter": "",
-        "visualization-type": "barChart",
-        "domain": [0,18]
-    },
-    {
-        "name": "Eb",
-        "datatype": "boolean",
-        "data-provider": "small-data.json",
-        "filtering-attribute": true,
-        "filtering-attribute-order": 8,
-        "filtering-attribute-filter": "",
-        "visualization-type": "pieChart"
-
-    }   
+        "filtering-attribute-order":4,
+        "domain": [-25, 25]
+    }      
 ]
