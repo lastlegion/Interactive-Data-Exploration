@@ -15,7 +15,7 @@ function clone(obj) {
 }
 
 function render_table(){
-
+console.log(colorbrewer)
 //Create dimensions and groups
 var attribute_name = "yearly"
  dimensions[attribute_name] = function(dim){
@@ -63,7 +63,8 @@ var attribute_name = "yearly"
     .group(groups["yearly"])
     .maxBubbleRelativeSize(0.4)       
     .margins({top: 50, right: 50, bottom: 30, left: 40})
-
+    .colors(colorbrewer.RdYlGn[9]) // (optional) define color function or array for bubbles
+    .colorDomain([-500, 500]) //(optional) define color domain to match your data domain if you want to bind data or color
     .colorAccessor(function (d) {
             return d.value.absGain;
         })
