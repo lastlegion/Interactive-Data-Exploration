@@ -87,6 +87,9 @@ var attribute_name = "yearly"
     .renderVerticalGridLines(true) // (optional) render vertical grid lines, :default=false
     .xAxisLabel('Index Gain') // (optional) render an axis label below the x axis
     .yAxisLabel('Index Gain %') // (optional) render a vertical axis lable left of the y axis
+
+
+
 }
 function refresh() {
   table_data= [];
