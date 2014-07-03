@@ -61,7 +61,7 @@ var attribute_name = "yearly"
     .height(500)
     .dimension(dimensions["yearly"])
     .group(groups["yearly"])
-    .maxBubbleRelativeSize(0.3)       
+    .maxBubbleRelativeSize(0.4)       
     .margins({top: 50, right: 50, bottom: 30, left: 40})
 
     .colorAccessor(function (d) {
@@ -79,6 +79,14 @@ var attribute_name = "yearly"
     .x(d3.scale.linear().domain([-2500, 2500]))
     .y(d3.scale.linear().domain([-100, 100]))
     .r(d3.scale.linear().domain([0, 4000]))
+    .elasticY(true)
+    .elasticX(true)
+    .yAxisPadding(100)
+    .xAxisPadding(500)
+    .renderHorizontalGridLines(true) // (optional) render horizontal grid lines, :default=false
+    .renderVerticalGridLines(true) // (optional) render vertical grid lines, :default=false
+    .xAxisLabel('Index Gain') // (optional) render an axis label below the x axis
+    .yAxisLabel('Index Gain %') // (optional) render a vertical axis lable left of the y axis
 }
 function refresh() {
   table_data= [];
